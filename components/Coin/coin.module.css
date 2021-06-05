@@ -1,0 +1,55 @@
+.contain{
+    display: flex;
+    justify-content: center;
+}
+.row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+.row:hover{
+    background-color: #171718;
+}
+.coin{
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+
+}
+.img{
+    margin-right: 15px !important;
+}
+.name{
+    font-size: 1rem;
+    margin-right: .5rem;
+}
+.symbol{
+    text-transform: uppercase;
+}
+.data{
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    width: 100px;
+
+}
+.price{
+    width: 100px;
+}
+.volume{
+    width: 150px;
+}
+.market{
+    width: 200px;
+}
+.percent{
+    width: 100px;
+}
+.red{
+    color: #f00606;
+}
+.green{
+    color: #13c783;
+}
