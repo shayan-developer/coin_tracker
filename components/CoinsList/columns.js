@@ -5,7 +5,14 @@ export const columns = [
         title: '',
         dataIndex: 'icon',
         key: 'icon',
-        render: ic => <Avatar src={ic} size={20} />,
+        render: ic => <Avatar src={ic} size={{
+            xs:20,
+            sm:25,
+            md:35,
+            lg:40,
+            xl:45,
+            xxl:50
+        }} />,
     },
     {
         title: 'Name',
@@ -18,19 +25,19 @@ export const columns = [
         key: 'price',
     },
     {
-        title: 'Change 24h',
+        title: '24h',
         dataIndex: 'price_change',
         key: 'price_change',
         render: num => {
                 if(num<0){
-                   return <Text type="danger">
+                   return <span style={{color:"red"}}>
                     {num.toFixed(2)}
-                </Text>
+                </span>
                 }
                 else{
-                    return <Text type="success">
+                    return <span style={{color:"green"}}>
                     {num.toFixed(2)}
-                </Text>
+                </span>
                 }
         }
     },

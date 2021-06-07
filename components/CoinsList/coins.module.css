@@ -1,6 +1,9 @@
-.green{
-    color: #13c783;
+
+.table{
+    margin:1rem 0;
+    
 }
-.red{
-    color: #f00606;
+.row{
+    background-color: #6eb6ff!important;
+    
 }

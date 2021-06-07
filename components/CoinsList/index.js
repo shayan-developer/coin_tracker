@@ -21,6 +21,10 @@ export const CoinsList = () => {
           dataSource={data}
           loading={loading}
           pagination={false}
+          rowClassName={styles.row}
+          className={styles.table}
+          scroll={{x:true}}
+          style={{backgroundColor:"#0c4271"}}
            />
     )
 }
