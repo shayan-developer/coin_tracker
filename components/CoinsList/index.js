@@ -1,15 +1,26 @@
-import { Col, Row } from 'antd'
-import React from 'react'
-import { Coin } from '../Coin'
+import { Table ,Typography} from 'antd';
+import React, { useState, useEffect } from 'react';
+import { sortedData } from '../../lib/sortedData';
+import styles from "./coins.module.css"
+import { columns } from './columns';
 
-export const CoinsList = ({ dataList }) => {
+export const CoinsList = () => {
+    const [data, setData] = useState([])
+    const [loading, setLoading] = useState(true)
+    useEffect(() => {
+        const fetchdata = async () => {
+            const res = await sortedData()
+            setData(res)
+            setLoading(false)
+        }
+        fetchdata()
+    }, [])
     return (
-        <Row justify='center'>
-            <Col span={20}>
-                {dataList.map((coin) => {
-                   return <Coin key={coin.id} {...coin} />
-                })}
-            </Col>
-        </Row>
+        <Table
+         columns={columns}
+          dataSource={data}
+          loading={loading}
+          pagination={false}
+           />
     )
 }

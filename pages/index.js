@@ -2,9 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { ConfigProvider } from 'antd';
 import { Search } from '../components/Search'
-import {fetcher} from "../lib/fetcher"
 import { CoinsList } from '../components/CoinsList';
-export default function Home({dataList}) {
+export default function Home() {
   return (
     <ConfigProvider direction="ltr">
       <div >
@@ -14,15 +13,9 @@ export default function Home({dataList}) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Search type="text" placeholder="جستجوی ارز" />
-        <CoinsList dataList={dataList}/>
+        <CoinsList />
       </div>
     </ConfigProvider>
   )
 }
 
-export async function getStaticProps(params) {
-  const dataList= await fetcher();
-  return {
-    props:{ dataList}
-  }
-}

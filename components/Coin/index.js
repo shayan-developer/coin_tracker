@@ -1,4 +1,4 @@
-import { Divider, Image } from 'antd'
+import { Divider, Image,Avatar } from 'antd'
 import React from 'react'
 import styles from './coin.module.css'
 export const Coin = ({
@@ -15,7 +15,7 @@ export const Coin = ({
             <div className={styles.contain}>
                 <div className={styles.row}>
                     <div className={styles.coin}>
-                        <Image src={image} alt={name} className={styles.img} size={22} />
+                        <Avatar src={image}  className={styles.img} size={22} />
                         <p className={styles.name}>{name}</p>
                         <p className={styles.symbol}>{symbol}</p>
                     </div>
