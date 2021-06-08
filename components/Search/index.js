@@ -1,12 +1,10 @@
-import { Col, Input, Row } from 'antd'
+import { Input} from 'antd'
 import React from 'react'
 import styles from "./search.module.css"
 export const Search = ({ ...props }) => {
     return (
-        <Row justify='center' style={{marginTop:'1rem'}}>
-            <Col span={12}>
+        <div style={{marginTop:'1rem',width:"50%"}}>
                 <Input  {...props} />
-            </Col>
-        </Row>
+        </div>
     )
 }
