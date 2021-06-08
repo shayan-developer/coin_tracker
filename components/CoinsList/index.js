@@ -1,29 +1,25 @@
-import { Table ,Typography} from 'antd';
-import React, { useState, useEffect } from 'react';
+import { Table } from 'antd';
+import React from 'react';
 import { sortedData } from '../../lib/sortedData';
 import styles from "./coins.module.css"
 import { columns } from './columns';
+import { useRouter } from 'next/router'
 
-export const CoinsList = () => {
-    const [data, setData] = useState([])
-    const [loading, setLoading] = useState(true)
-    useEffect(() => {
-        const fetchdata = async () => {
-            const res = await sortedData()
-            setData(res)
-            setLoading(false)
-        }
-        fetchdata()
-    }, [])
+export const CoinsList = ({datalist}) => {
+    const router = useRouter()
     return (
         <Table
          columns={columns}
-          dataSource={data}
-          loading={loading}
+          dataSource={sortedData(datalist)}
           pagination={false}
           rowClassName={styles.row}
           className={styles.table}
           scroll={{x:true}}
+          onRow={(record) => {
+              return{
+                onClick: () =>router.push(`/coin/${record.name.id}`)
+              }
+          }}
           style={{backgroundColor:"#0c4271"}}
            />
     )

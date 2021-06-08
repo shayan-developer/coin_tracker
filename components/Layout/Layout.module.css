@@ -9,3 +9,8 @@
     align-items: center;
     justify-content: center;
 }
+.logo_col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

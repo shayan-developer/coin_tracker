@@ -1,5 +1,6 @@
 import {Avatar,Typography} from "antd";
-const { Text, Link } = Typography;
+import Link from 'next/link'
+const { Text } = Typography;
 export const columns = [
     {
         title: '',
@@ -18,6 +19,13 @@ export const columns = [
         title: 'Name',
         dataIndex: 'name',
         key: 'name',
+        render:item=>{
+          return  <Link href={`/coin/${item.id}`} >
+            <a>
+               {item.name} 
+            </a>
+            </Link>
+        }
     },
     {
         title: 'Price',
