@@ -1,6 +1,4 @@
 import {Avatar,Typography} from "antd";
-import Link from 'next/link'
-const { Text } = Typography;
 export const columns = [
     {
         title: '',
@@ -20,11 +18,9 @@ export const columns = [
         dataIndex: 'name',
         key: 'name',
         render:item=>{
-          return  <Link href={`/coin/${item.id}`} >
-            <a>
+          return <span>
                {item.name} 
-            </a>
-            </Link>
+            </span>
         }
     },
     {
@@ -39,12 +35,12 @@ export const columns = [
         render: num => {
                 if(num<0){
                    return <span style={{color:"red"}}>
-                    {num.toFixed(2)}
+                    {num.toFixed(2)}%
                 </span>
                 }
                 else{
                     return <span style={{color:"green"}}>
-                    {num.toFixed(2)}
+                    {num.toFixed(2)}%
                 </span>
                 }
         }
