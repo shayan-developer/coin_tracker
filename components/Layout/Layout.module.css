@@ -1,5 +1,5 @@
 .root{
-    background-color: #90f2ff;
+    background-color: #19d3da !important;
     width: 100%;
     min-height: 100vh;
 }
@@ -13,5 +13,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    flex-direction: column;
 }

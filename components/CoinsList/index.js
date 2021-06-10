@@ -72,6 +72,7 @@ export const CoinsList = ({datalist}) => {
           rowClassName={styles.row}
           className={styles.table}
           scroll={{x:true}}
+          size='small'
           onRow={(record) => {
               return{
                 onClick: () =>router.push(`/coin/${record.name.id}`)

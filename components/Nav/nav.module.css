@@ -34,7 +34,7 @@
     font-size: .8rem;
 }
 .link:hover{
-    padding-left: 1rem;
+    color: #1f8cfa !important;
 }
 .title{
     font-size: .9rem;

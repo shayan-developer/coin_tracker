@@ -6,7 +6,7 @@ import fa from "../../public/locales/fa/fa"
 import styles from "./Layout.module.css"
 import {useRouter} from "next/router"
 import Nav from '../Nav'
-export default function Layout({ children }){
+export default function Layout({ children ,hero}){
     const router =useRouter()
     const {locale}=router;
     const t = locale==="en"?en:fa
@@ -18,6 +18,7 @@ export default function Layout({ children }){
                         <Nav/>
                     </Col>
                 </Row>
+                {hero}
                 <Row  justify='center' style={{height:'100%'}}>
                     <Col span={22} className={styles.col}>
                         {children}

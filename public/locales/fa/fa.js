@@ -5,5 +5,8 @@ export default{
     drawerTitle:"ارز دیجیتال",
     name:"نام",
     price:"قیمت",
-    volume:"حجم"
+    volume:"حجم",
+    heroTxt:"قیمت لحظه ای ارزهای دیجیتال",
+    view:"مشاهده",
+    table:"جدول ارز"
 } 

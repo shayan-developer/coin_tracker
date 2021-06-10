@@ -1,0 +1,45 @@
+.row{
+    height: 100vh;
+}
+
+.img{
+    animation-name: image ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:1rem ;
+}
+.txt{
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+@keyframes image {
+    0%{
+transform: translateY(30px);
+    }
+    50%{
+  transform: translateY(0px);
+
+    }
+    100%{
+        transform: translateY(30px);
+
+    }
+}
+@media only screen and (min-width:576px) {
+    .txt{
+        font-size: 1.3rem;
+    }
+   
+}
+@media only screen and (min-width:768px) {
+    .txt{
+        font-size: 1.5rem;
+    }
+}

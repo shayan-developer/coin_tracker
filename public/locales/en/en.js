@@ -5,5 +5,8 @@ export default{
     drawerTitle:"Digital currency",
     name:"Name",
     price:"Price",
-    volume:"Volume"
+    volume:"Volume",
+    heroTxt:"Instant review of digital currency prices",
+    view:"View",
+    table:"Currency table"
 } 

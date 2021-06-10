@@ -1,0 +1,24 @@
+.Parallelogram {
+    width: 100%;
+    height: 100%;
+    background-color: #188FFE !important;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    padding: 1rem 2rem;
+}
+
+.text {
+    text-align: center;
+    font-size: .7rem;
+    color: rgb(255, 255, 255);
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media  (min-width:780px) {
+    .text{
+        font-size: 1.1rem;
+    }
+}
