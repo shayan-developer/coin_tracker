@@ -24,6 +24,7 @@ export const CoinsList = ({datalist}) => {
                 xl:45,
                 xxl:50
             }} />,
+            responsive: ["xs","sm","md","lg","xl","xxl"]
         },
         {
             title: t.name,
@@ -33,12 +34,15 @@ export const CoinsList = ({datalist}) => {
               return <span>
                    {item.name} 
                 </span>
-            }
+            },
+            responsive: ["xs","sm","md","lg","xl","xxl"]
         },
+      
         {
             title: t.price,
             dataIndex: 'price',
             key: 'price',
+            responsive: ["xs","sm","md","lg","xl","xxl"]
         },
         {
             title: '24h',
@@ -55,12 +59,15 @@ export const CoinsList = ({datalist}) => {
                         {num.toFixed(2)}%
                     </span>
                     }
-            }
+            },
+            responsive: ["xs","sm","md","lg","xl","xxl"]
         },
+      
         {
             title: t.volume,
             dataIndex: 'volume',
             key: 'volume',
+            responsive: ["sm","md","lg","xl","xxl"]
         },
     ];
     // =================================================
@@ -72,7 +79,6 @@ export const CoinsList = ({datalist}) => {
           rowClassName={styles.row}
           className={styles.table}
           scroll={{x:true}}
-          size='small'
           onRow={(record) => {
               return{
                 onClick: () =>router.push(`/coin/${record.name.id}`)

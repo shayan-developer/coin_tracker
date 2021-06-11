@@ -10,7 +10,7 @@ export default function index() {
     const t = locale === "en" ? en : fa
     const scroll=()=>{
         window.scroll({
-            top: 3000,
+            top: 1400,
             behavior: 'smooth'
         });
     }

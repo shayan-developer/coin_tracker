@@ -6,4 +6,10 @@
 .row{
     background-color: #6eb6ff!important;
     cursor: pointer;
+    font-size: .6rem;
+}
+@media only screen and (min-width:768px) {
+   .row{
+    font-size: 1rem;
+   }
 }

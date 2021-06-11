@@ -20,7 +20,7 @@ export default function Layout({ children, hero }) {
                     </Col>
                 </Row>
                 {hero}
-                <Row justify='center' style={{ height: '100%' }}>
+                <Row justify='center' style={{ minHeight:'100vh' }}>
                     <Col span={22} className={styles.col}>
                         {children}
                     </Col>

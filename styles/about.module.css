@@ -10,10 +10,11 @@
     justify-content: center;
 }
 .box{
-    background-color: #fff;
+    background-color: #6eb6ff;
     width: 90%;
     border-radius: .25rem;
     padding:2rem 1rem;
+    margin: 1rem 0;
 }
 .pro{
     margin-top:2rem ;
@@ -23,11 +24,12 @@
     align-items: flex-start;
 }
 .head{
-    color: #6eb6ff;
+    color: #fff;
     font-size: 1rem;
 }
 .txt{
     font-size: .8rem;
+    color: #fff ;
 }
 @media only screen and (min-width:576px) {
     .head{

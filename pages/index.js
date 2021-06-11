@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import { url } from "../lib/url";
 import en from "../public/locales/en/en"
 import fa from "../public/locales/fa/fa"
@@ -19,7 +18,7 @@ export default function Home({ data }) {
   return (
     <>
       <Head>
-        <title> price tracker </title>
+        <title> {t.heroTxt} </title>
       </Head>
       <Layout hero={ <Hero/>}>
         <ConfigProvider direction={dir}>

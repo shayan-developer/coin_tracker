@@ -1,18 +1,33 @@
 .card{
     background-color: #6eb6ff;
-    padding: 1rem 2rem;
-    width: 300px !important;
+    padding: 1rem .5rem;
+    width: 200px !important;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: .8rem;
     border-radius: .5rem;
+    margin: 1rem 0;
+}
+.img{
+    height: 70px;
+    width: 100px;
 }
 @media only screen and (min-width:576px) {
     .card{
-        width: 350px !important;
+        width: 300px !important;
+        font-size: 1rem;
+    }
+    .img{
+        height: 100px;
+        width: 130px;
     }
 }
 @media only screen and (min-width:768px) {
     .card{
         width: 400px !important;
+        font-size: 1..3rem;
+    }
+    .img{
+        height: 150px;
+        width: 180px;
     }
 }
