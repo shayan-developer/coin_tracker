@@ -4,12 +4,15 @@
     background-color: #188FFE !important;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     padding: 1rem 2rem;
+    border: none;
+    outline: none;
 }
 
 .text {
     text-align: center;
     font-size: .7rem;
     color: rgb(255, 255, 255);
+    padding: 0 1rem;
 }
 
 .col {

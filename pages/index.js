@@ -4,12 +4,12 @@ import { url } from "../lib/url";
 import en from "../public/locales/en/en"
 import fa from "../public/locales/fa/fa"
 import { ConfigProvider } from 'antd';
-import { Search } from '../components/Search'
 import { CoinsList } from '../components/CoinsList';
 import Layout from '../components/Layout';
 import { fetcher } from '../lib/fetcher';
 import { useRouter } from 'next/router';
 import Hero from "../components/Hero"
+import Intro from "../components/Intro"
 import Parallelogram from '../components/Parallelogram';
 export default function Home({ data }) {
   const router = useRouter()
@@ -23,7 +23,8 @@ export default function Home({ data }) {
       </Head>
       <Layout hero={ <Hero/>}>
         <ConfigProvider direction={dir}>
-        <Search type="text" placeholder=" searching... " />
+        <Parallelogram> {t.what_currency} </Parallelogram>
+        <Intro/>
         <Parallelogram> {t.table} </Parallelogram>
         <CoinsList datalist={data}/>
         </ConfigProvider>

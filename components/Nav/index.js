@@ -10,11 +10,12 @@ export default function Nav() {
     const router = useRouter()
     const [visible, setVisible] = useState(false);
     const { locale } = router;
+    const{route}=router;
     const dir = locale === "en" ? "ltr" : "rtl"
     const t = locale === "en" ? en : fa;
     const changeLang = (e) => {
         console.log(e);
-        router.push("/", "/", { locale: e.target.value })
+        router.push(route, route, { locale: e.target.value })
     }
     const showDrawer = () => {
         setVisible(true);
