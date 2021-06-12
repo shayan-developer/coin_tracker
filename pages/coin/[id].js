@@ -17,10 +17,6 @@ export default function Coin({ data }) {
     const t = locale === "en" ? en : fa;
     const dir = locale === "en" ? "ltr" : "rtl"
     return (
-        <>
-            <Head>
-                <title>{data.name}</title>
-            </Head>
             <Layout>
                 <ConfigProvider direction={dir}>
                     <Card
@@ -36,7 +32,6 @@ export default function Coin({ data }) {
                     </Card>
                 </ConfigProvider>
             </Layout>
-        </>
     )
 }
 export async function getStaticPaths({ locales }) {
