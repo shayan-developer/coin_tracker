@@ -3,6 +3,11 @@
     margin:1rem 0;
     width: 100%;
 }
+.summary{
+    font-size: .8rem;
+    margin-bottom: 3rem;
+    color:#fff
+}
 .row{
     background-color: #6eb6ff!important;
     cursor: pointer;
@@ -11,5 +16,8 @@
 @media only screen and (min-width:768px) {
    .row{
     font-size: 1rem;
+   }
+   .summary{
+       font-size: 1.2rem;
    }
 }

@@ -1,0 +1,107 @@
+
+.slideshow {
+	margin: 0 auto;
+	padding-top: 50px;
+	height: 600px;
+	width: 100%;
+    overflow: hidden;
+	box-sizing: border-box;
+}
+
+.entire_content {
+	margin: auto;
+	width: 190px;
+	perspective: 1000px;
+	position: relative;
+	padding-top: 80px;
+}
+
+.content_carrousel {
+	width: 100%;
+    position: absolute;
+	float: right;
+	animation: rotar 15s infinite linear;
+	transform-style: preserve-3d;
+}
+
+.content_carrousel:hover {
+	animation-play-state: paused;
+	cursor: pointer;
+}
+
+.content_carrousel figure{
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	position: absolute;
+}
+
+.content_carrousel figure:nth-child(1) {
+	transform: rotateY(0deg) translateZ(400px); 
+} .content_carrousel figure:nth-child(2) {
+	transform: rotateY(72deg) translateZ(400px); 
+} .content_carrousel figure:nth-child(3) {
+	transform: rotateY(144deg) translateZ(400px); 
+} .content_carrousel figure:nth-child(4) {
+	transform: rotateY(216deg) translateZ(400px); 
+} .content_carrousel figure:nth-child(5) {
+	transform: rotateY(288deg) translateZ(400px); 
+} 
+
+.content_carrousel img {
+	image-rendering: auto;
+	width: 100%;
+	height: 100%;
+}
+
+@keyframes rotar {
+	from {
+		transform: rotateY(0deg);
+	} to {
+		transform: rotateY(360deg);
+	}
+}
+
+@media only screen and (max-width:576px) {
+    .content_carrousel figure{
+        width: 60px;
+	height: 60px;
+    }
+    .slideshow{
+        height: 400px;
+    }
+    .content_carrousel figure:nth-child(1) {
+        transform: rotateY(0deg) translateZ(150px); 
+    } .content_carrousel figure:nth-child(2) {
+        transform: rotateY(72deg) translateZ(150px); 
+    } .content_carrousel figure:nth-child(3) {
+        transform: rotateY(144deg) translateZ(150px); 
+    } .content_carrousel figure:nth-child(4) {
+        transform: rotateY(216deg) translateZ(150px); 
+    } .content_carrousel figure:nth-child(5) {
+        transform: rotateY(288deg) translateZ(150px); 
+    } 
+    
+   
+}
+@media only screen and (max-width:768px) {
+    .content_carrousel figure{
+        width: 70px;
+	height: 70px;
+    }
+    .slideshow{
+        height: 500px;
+    }
+    .content_carrousel figure:nth-child(1) {
+        transform: rotateY(0deg) translateZ(200px); 
+    } .content_carrousel figure:nth-child(2) {
+        transform: rotateY(72deg) translateZ(200px); 
+    } .content_carrousel figure:nth-child(3) {
+        transform: rotateY(144deg) translateZ(200px); 
+    } .content_carrousel figure:nth-child(4) {
+        transform: rotateY(216deg) translateZ(200px); 
+    } .content_carrousel figure:nth-child(5) {
+        transform: rotateY(288deg) translateZ(200px); 
+    } 
+    
+}

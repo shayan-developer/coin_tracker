@@ -10,6 +10,7 @@ import { useRouter } from 'next/router';
 import Hero from "../components/Hero"
 import Intro from "../components/Intro"
 import Parallelogram from '../components/Parallelogram';
+import Carrousel from '../components/Carrousel';
 export default function Home({ data }) {
   const router = useRouter()
   const { locale } = router;
@@ -24,6 +25,7 @@ export default function Home({ data }) {
         <ConfigProvider direction={dir}>
         <Parallelogram> {t.what_currency} </Parallelogram>
         <Intro/>
+        <Carrousel/>
         <Parallelogram> {t.table} </Parallelogram>
         <CoinsList datalist={data}/>
         </ConfigProvider>

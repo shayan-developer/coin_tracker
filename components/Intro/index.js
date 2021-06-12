@@ -8,11 +8,10 @@ export default function index() {
     const router = useRouter()
     const { locale } = router;
     const t = locale === "en" ? en : fa;
-    const dir = locale === "en" ? "ltr" : "rtl"
     const { Paragraph } = Typography
     return (
-        <Row gutter={[40, 20]} justify='center' className={styles.row} >
-            <Col xs={22} sm={22} md={7}>
+        <Row justify='space-between' className={styles.row} >
+            <Col xs={22} sm={22} md={22} xl={7}>
                 <div className={styles.box}>
                     <Image src="./c1.png"
                         preview={false}
@@ -22,7 +21,7 @@ export default function index() {
                 </div>
             </Col>
 
-            <Col xs={22} sm={22} md={7}>
+            <Col xs={22} sm={22} md={22} xl={7}>
                 <div className={styles.box}>
                     <Image src="./c2.png"
                         preview={false}
@@ -31,7 +30,7 @@ export default function index() {
                     <Paragraph className={styles.txt}>{t.intro_txt2}</Paragraph>
                 </div>
             </Col>
-            <Col xs={22} sm={22} md={7}>
+            <Col xs={22} sm={22} md={22} xl={7}>
                 <div className={styles.box}>
                     <Image
                         src="./c3.png"

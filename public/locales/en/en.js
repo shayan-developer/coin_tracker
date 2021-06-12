@@ -9,6 +9,7 @@ export default{
     heroTxt:"Instant review of digital currency prices",
     view:"View",
     table:"Currency table",
+    summary:"Click on the desired row to see more information",
     about_header1:"Who AM I ?",
     about_text1:`Hi, I am shayan and I have been working in Front End for about a year and 
     I love learning new technologies and programming.`,
@@ -25,4 +26,5 @@ export default{
     intro_txt3:`Digital currencies are encrypted strings of data or hashes that determine
      the existence of a currency.`,
      footer_txt:"All material and intellectual rights belong to shayan shadanpour",
+     genesis:"Genesis data",
 } 

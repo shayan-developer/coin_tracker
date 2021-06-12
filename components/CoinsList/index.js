@@ -72,6 +72,7 @@ export const CoinsList = ({datalist}) => {
     ];
     // =================================================
     return (
+        <>
         <Table
          columns={columns}
           dataSource={sortedData(datalist)}
@@ -85,5 +86,7 @@ export const CoinsList = ({datalist}) => {
               }
           }}
            />
+           <p className={styles.summary}>{t.summary}</p>
+           </>
     )
 }
