@@ -2,19 +2,19 @@ import Link from 'next/link'
 import en from "../../public/locales/en/en"
 import fa from "../../public/locales/fa/fa"
 import { useRouter } from 'next/router';
-import React, { useState} from 'react'
+import React, { useEffect, useState} from 'react'
 import { MenuOutlined } from '@ant-design/icons';
 import styles from "./nav.module.css"
 import { ConfigProvider, Drawer, Radio } from 'antd';
 export default function Nav() {
     const router = useRouter()
     const [visible, setVisible] = useState(false);
+    const [width, setWidth] = useState(0);
     const { locale } = router;
     const{asPath}=router;
     const dir = locale === "en" ? "ltr" : "rtl"
     const t = locale === "en" ? en : fa;
     const changeLang = (e) => {
-        console.log(e);
         router.push(asPath, asPath, { locale: e.target.value })
     }
     const showDrawer = () => {
@@ -23,6 +23,16 @@ export default function Nav() {
     const onClose = () => {
         setVisible(false);
     };
+    const widthChek=()=>{
+        if (width<576) {
+            return 153
+        } else {
+            return 250
+        }
+    }
+    useEffect(() => {
+       setWidth(window.screen.width)
+    }, [width])
     return (
         <nav className={styles.nav}>
             <Radio.Group
@@ -45,6 +55,7 @@ export default function Nav() {
                     closable={false}
                     onClose={onClose}
                     visible={visible}
+                    width={widthChek()}
                 >
                     <div className={styles.menu}>
                         <div className={styles.menuItem}>
