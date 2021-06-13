@@ -8,7 +8,7 @@ export default{
     volume:"حجم",
     heroTxt:"بررسی ارزهای دیجیتال",
     view:"جدول ارزها",
-    converter_currency:"تبدیلگر ارز",
+    converter_currency:"حسابگر ارز",
     table:"جدول ارزها",
     summary:"برای مشاهده اطلاعات بیشتر روی ردیف موردنظر کلیک کنید",
     about_header1:"من کی هستم ؟",

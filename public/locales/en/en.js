@@ -8,7 +8,7 @@ export default{
     volume:"Volume",
     heroTxt:"Check digital currencies",
     view:"Currencies table",
-    converter_currency:"converter currency",
+    converter_currency:"Calculator currency",
     table:"Currency table",
     summary:"Click on the desired row to see more information",
     about_header1:"Who AM I ?",
