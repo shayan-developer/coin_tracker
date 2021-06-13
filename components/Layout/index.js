@@ -14,7 +14,7 @@ export default function Layout({ children, hero }) {
     return (
         <Row justify='center' className={styles.root}>
             <Col span={24} style={{ height: '100%' }}>
-                <Row justify='center'>
+                <Row justify='center' style={{position:"fixed",width:'100%',zIndex:'1000'}}>
                     <Col span={24} className={styles.logo_col}>
                         <Nav />
                     </Col>

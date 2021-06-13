@@ -8,9 +8,15 @@ export default function index() {
     const router = useRouter()
     const { locale } = router;
     const t = locale === "en" ? en : fa
-    const scroll=()=>{
+    const scrollToTable = () => {
         window.scroll({
-            top: 1400,
+            top: 2450,
+            behavior: 'smooth'
+        });
+    }
+    const scrollToCon = () => {
+        window.scroll({
+            top: 1600,
             behavior: 'smooth'
         });
     }
@@ -23,12 +29,18 @@ export default function index() {
                 <div className={styles.txt}>
                     {t.heroTxt}
                 </div>
-                <Button 
-                shape='round'
-                size='large'
-                className={styles.btn}
-                type="primary" 
-                onClick={scroll}>{t.view}</Button>
+                <div className={styles.btnGp}>
+                    <Button
+                        shape='round'
+                        className={styles.btn}
+                        type="primary"
+                        onClick={scrollToTable }>{t.view}</Button>
+                    <Button
+                        shape='round'
+                        className={styles.btn}
+                        type="primary"
+                        onClick={scrollToCon}>{t.converter_currency}</Button>
+                </div>
             </Col>
         </Row>
     )

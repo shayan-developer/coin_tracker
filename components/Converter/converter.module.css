@@ -1,0 +1,47 @@
+.row{
+    width: 100%;
+    margin: 1.5rem 0;
+}
+.col{
+    width: 100%;
+}
+.box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.select{
+    width:100% ;
+}
+.icon{
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 1rem 1rem;
+}
+.res{
+    margin: 1rem 0;
+    color: #fff;
+    padding: 1rem;
+}
+.txt{
+    margin: 1rem 0;
+}
+@media only screen and (min-width:576px) {
+    .box{
+        flex-direction: row;
+    }
+   .res{
+       font-size: 1.1rem;
+   }
+   .icon{
+    transform: rotate(90deg) !important;
+   }
+}
+@media only screen and (min-width:768px) {
+    .res{
+        font-size: 1.5rem;
+    }
+}

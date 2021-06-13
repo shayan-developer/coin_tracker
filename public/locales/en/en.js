@@ -6,8 +6,9 @@ export default{
     name:"Name",
     price:"Price",
     volume:"Volume",
-    heroTxt:"Instant review of digital currency prices",
-    view:"View",
+    heroTxt:"Check digital currencies",
+    view:"Currencies table",
+    converter_currency:"converter currency",
     table:"Currency table",
     summary:"Click on the desired row to see more information",
     about_header1:"Who AM I ?",
@@ -27,4 +28,10 @@ export default{
      the existence of a currency.`,
      footer_txt:"All material and intellectual rights belong to shayan shadanpour",
      genesis:"Genesis data",
+     bitcoin:"Bitcoin",
+     ethereum:"Ethereum",
+     tether:"Tether",
+     placeholder:"Please enter values",
+     us_dollar:"U.S. dollar",
+     iranian_rial:"Iranian Rial"
 } 

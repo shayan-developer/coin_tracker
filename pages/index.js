@@ -8,6 +8,7 @@ import Layout from '../components/Layout';
 import { fetcher } from '../lib/fetcher';
 import { useRouter } from 'next/router';
 import Hero from "../components/Hero"
+import Converter from "../components/Converter"
 import Intro from "../components/Intro"
 import Parallelogram from '../components/Parallelogram';
 import Carrousel from '../components/Carrousel';
@@ -25,8 +26,10 @@ export default function Home({ data }) {
         <ConfigProvider direction={dir}>
         <Parallelogram> {t.what_currency} </Parallelogram>
         <Intro/>
+        <Parallelogram> {t.converter_currency} </Parallelogram>
+        <Converter coins={data}/>
         <Carrousel/>
-        <Parallelogram> {t.table} </Parallelogram>
+        <Parallelogram> <span id="table">{t.table}</span> </Parallelogram>
         <CoinsList datalist={data}/>
         </ConfigProvider>
       </Layout >

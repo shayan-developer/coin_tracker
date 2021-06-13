@@ -6,8 +6,9 @@ export default{
     name:"نام",
     price:"قیمت",
     volume:"حجم",
-    heroTxt:"قیمت لحظه ای ارزهای دیجیتال",
-    view:"مشاهده",
+    heroTxt:"بررسی ارزهای دیجیتال",
+    view:"جدول ارزها",
+    converter_currency:"تبدیلگر ارز",
     table:"جدول ارزها",
     summary:"برای مشاهده اطلاعات بیشتر روی ردیف موردنظر کلیک کنید",
     about_header1:"من کی هستم ؟",
@@ -28,4 +29,10 @@ export default{
      ارزی را مشخص می کنند`,
      footer_txt:"تمامی حقوق مادی و معنوی متعلق به شایان شادان پور است",
      genesis:"تاریخ معرفی",
+     bitcoin:"بیت کوین",
+     ethereum:"اتریوم",
+     tether:"تتر",
+     placeholder:"لطفا مقادیر را وارد کنید",
+     us_dollar:"دلار آمریکا",
+     iranian_rial:"ریال ایران "
 } 

@@ -6,7 +6,7 @@ export default function Parallelogram({children}) {
         <Row style={{margin:"1rem 0"}}>
             <Col className={styles.col}>
                 <div className={styles.Parallelogram}>
-                    <span className={styles.text}> {children}</span>
+                    <div className={styles.text}> {children}</div>
                 </div>
             </Col>
         </Row>

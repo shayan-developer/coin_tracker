@@ -1,5 +1,5 @@
 .row{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .img{
@@ -7,17 +7,26 @@
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
+.btnGp{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: 3rem;
+}
 .col{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom:1rem ;
+    margin:3rem 0 ;
 }
 .txt{
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
+
 }
 
 @keyframes image {
@@ -37,7 +46,14 @@ transform: translateY(30px);
     .txt{
         font-size: 1.3rem;
     }
-   
+    .btnGp{
+        width: 80%;
+    }
+   .btn{
+       height: 50px;
+       width: auto;
+       font-size: 1rem;
+   }
 }
 @media only screen and (min-width:768px) {
     .txt{
