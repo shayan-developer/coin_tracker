@@ -23,8 +23,6 @@ export default function Converter({ coins }) {
     }
     const selectCoin=coinPrice[select]
     const num=inp||1
-    console.log(dollar);
-    console.log(coinPrice);
     const selectChange = (e) => {
         setSelect(e)
     }
@@ -45,6 +43,7 @@ export default function Converter({ coins }) {
                     <Input  
                     onChange={inpChange}
                     placeholder={t.placeholder}
+                    value={inp}
                      className={styles.input} />
                     <span className={styles.icon}><SwapOutlined rotate={90} /></span>
                     <Select defaultValue="bitcoin"

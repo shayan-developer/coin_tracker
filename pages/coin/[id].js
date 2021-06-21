@@ -15,14 +15,12 @@ export default function Coin({ data }) {
     const router = useRouter()
     const { locale } = router;
     const t = locale === "en" ? en : fa;
-    const dir = locale === "en" ? "ltr" : "rtl"
     return (
         <>
             <Head>
                 <title>{data.name}</title>
             </Head>
             <Layout>
-                <ConfigProvider direction={dir}>
                     <Card
                         hoverable
                         className={styles.card}
@@ -34,7 +32,6 @@ export default function Coin({ data }) {
                         <p className={styles.txt}> {t.volume} : ${data.market_data.market_cap.usd.toLocaleString()} </p>
                         <p className={styles.txt}>{t.genesis} : {data.genesis_date}</p>
                     </Card>
-                </ConfigProvider>
             </Layout>
         </>
     )
